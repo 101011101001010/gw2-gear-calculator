@@ -29,13 +29,6 @@ fun main(args: Array<String>) {
         return
     }
 
-    for (arg in args) {
-        if (arg.equals("-marauder", true)) {
-            marauderOnly = true
-            continue
-        }
-    }
-
     val targetPrecision = (targetCrit * 21) + 895 - (infusions * 5)
     calculate(targetPrecision.toInt(), marauderOnly)
 }
